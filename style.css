@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #c6e2e7;
+}
+
+header {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, red, #00d4ff);
+    color: white;
+    height: 100vh;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: white;
+    color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+  .header-hero {
+      height: 70vh;
+      color: white;
+      animation: gradientMove 5s infinite alternate ease-in-out,
+                 slideDown 1.2s ease-out forwards;
+      opacity: 0;
+      background: linear-gradient(130deg, #ff3d3d, #0084ff, #00c3ff);
+      background-size: 200% 200%;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: left; }
+      100% { background-position: right; }
+    }
+ .btn-anim {
+      transition: 0.3s;
+    }
+    .btn-anim:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px white;
+    }
+    .search-box {
+      animation: fadeIn 1.5s ease-in-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .job-card {
+      transition: 0.4s;
+    }
+    .job-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    }
+  .form-box{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    z-index: 1;
+    transition: 0.6s ease-in-out 1.2s, visibility;
+  }
